@@ -148,4 +148,4 @@ AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASE['default'].update(db_from_env)
+DATABASES['default'].update(db_from_env)
